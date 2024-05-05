@@ -51,7 +51,7 @@ tensorboard-plugin-wit==1.8.1
 tensorflow==2.16.1
 tensorflow-addons==0.22.0
 tensorflow-estimator==2.15.0
-tensorflow-intel==2.16.1
+tensorflow-intel
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 typeguard==2.13.3
