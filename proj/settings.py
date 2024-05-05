@@ -159,7 +159,7 @@ EMAIL_HOST_USER = 'skinsightcc@gmail.com'  # Replace with your email username
 EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
-    '.\app1\static'
+    './app1/static'
  ]
 
 AUTHENTICATION_BACKENDS=(
