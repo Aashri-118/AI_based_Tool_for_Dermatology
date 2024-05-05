@@ -161,7 +161,8 @@ EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'app1/static'),
-
+]
+    
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
