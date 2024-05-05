@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7p37nwzp-i7@vj0r6grbc17f927f*ucb^w!c07iot^07)pj(+2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
 
 SITE_ID=4
 # Application definition
@@ -159,7 +159,7 @@ EMAIL_HOST_USER = 'skinsightcc@gmail.com'  # Replace with your email username
 EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
-    'D:\\VS Code\\Aashri\'s Project2\\project\\app1\\static'
+    '.\\app1\\static'
  ]
 
 AUTHENTICATION_BACKENDS=(
