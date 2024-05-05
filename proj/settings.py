@@ -160,8 +160,7 @@ EMAIL_HOST_USER = 'skinsightcc@gmail.com'  # Replace with your email username
 EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
-    '.\app1\static\
- ]
+    os.path.join(BASE_DIR, 'app1/static'),
 
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
