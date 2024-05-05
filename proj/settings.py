@@ -71,6 +71,7 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleWare'
     
     
 ]
@@ -159,8 +160,13 @@ EMAIL_HOST_USER = 'skinsightcc@gmail.com'  # Replace with your email username
 EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
-    './app1/static/
+    '.\app1\static\
  ]
+
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 AUTHENTICATION_BACKENDS=(
     "django.contrib.auth.backends.ModelBackend",
