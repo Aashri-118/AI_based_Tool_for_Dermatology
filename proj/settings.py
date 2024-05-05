@@ -144,7 +144,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = './app1/static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -159,7 +159,7 @@ EMAIL_HOST_USER = 'skinsightcc@gmail.com'  # Replace with your email username
 EMAIL_HOST_PASSWORD = 'zwmu qkdz uuaz wmcm'  # Replace with your email password
 
 STATICFILES_DIRS = [
-    './app1/static'
+    os.path.join[BASE_DIR, 'static']
  ]
 
 AUTHENTICATION_BACKENDS=(
