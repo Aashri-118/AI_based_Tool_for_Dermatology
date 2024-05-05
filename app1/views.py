@@ -271,7 +271,7 @@ import keras
 import tensorflow as tf
 from keras.models import load_model
 
-model = load_model('D:/VS Code/Aashri\'s Project2/project/models/skin_cancer_model.h5')
+model = load_model('./models/skin_cancer_model.h5')
 
 class_names = {
     0: 'Melanocytic nevi',
@@ -286,7 +286,7 @@ class_names = {
 def handle_upload(request):
     if request.method == 'POST' and request.FILES.get('fileup'):
         uploaded_file = request.FILES['fileup']
-        destination_folder = 'D:/VS Code/Aashri\'s Project2/project/save/'
+        destination_folder = './save/'
 
         try:
             # Save the uploaded file to the media folder
@@ -364,7 +364,7 @@ def sendmail(request):
             [email],
             fail_silently=False)
 
-        with open('D:\\VS Code\\Aashri\'s Project2\\project\\feedback.txt', 'a') as file:
+        with open('.\\feedback.txt', 'a') as file:
             file.write(f"Feedback: {feedback}\n")
             file.write(f"Email: {email}\n\n")
         
@@ -384,7 +384,7 @@ def sendmail2(request):
             [email],
             fail_silently=False)
         
-        with open('D:\\VS Code\\Aashri\'s Project2\\project\\feedback.txt', 'a') as file:
+        with open('.\\feedback.txt', 'a') as file:
             file.write(f"Feedback: {feedback}\n")
             file.write(f"Email: {email}\n\n")
         
